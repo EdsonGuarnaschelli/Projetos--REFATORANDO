@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&family=Ubuntu&display=swap');
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+*{
+    font-family:"Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #fff;
+    margin: 0;
+}
+
+
+@keyframes slide {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}
+
+.sign-up-form {
+    display: flex;
+    height: 40vh;
+}
+
+
+.login-text {
+    height: 100vh;
+    width: 50vw;
+    color: rgba(253, 253, 255, 1);
+    filter: drop-shadow(1px 4px 6px rgba(0,0,0,0.25));
+    text-align: left;
+    justify-items: center;
+    align-self: stretch;
+    background-image: url(./src/bg.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide linear 90s forwards alternate-reverse;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 41.6px;
+}
+
+p {
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.login-text-content, .sign-up-form-content {
+    height: 164px;
+    width: 30vw;
+    margin-top: 40vh;
+    justify-content: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    gap: 10px;
+}
+
+.login-form {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    text-align: center;
+    flex: 1;
+    display: flex;
+}
+
+.sign-up-form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: stretch;
+    flex: 1;
+}
+
+input {
+    width: 35vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    box-sizing: border-box;
+}
+
+
+
+h3 {
+    text-align: left;
+}
+
+.login-form a, .sign-up-content a, .sign-up-form-login a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+    color: #2b2b2b;
+    align-self: flex-end;
+}
+
+.login-form a:hover, 
+.sign-up-content a:hover, 
+.sign-up-form-login a:hover{
+    color: #00B7BC;
+}
+
+button {
+    background: linear-gradient(90deg, #0B9DCA -4.82%, #44d9de 100.35%);
+    width: 35vw;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    border-radius: 1%;
+    color: #f8f2f2;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-form-divider {
+    color: #626476;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #626476;
+    justify-content: center;
+    text-align: center;
+    display: block;    
+}
+
+.login-form-divider div {
+    width: 150px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    background-color: #fff;
+    left: calc(50% - 75px);
+    padding: 0px 7.9px 1px 8.1px;
+}
+
+#google-container {
+    display: flex;
+    border: solid 1px rgba(234, 234, 234, 1);
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+#google-container img {
+    margin: 10px;
+    display: inline;
+}
+
+#google-container span:hover {
+    color: #00B7BC;
+}
+
+.login-form-subscribe a, .sign-up-form-login a {
+    color: #0B9DCA;
+    padding: auto;
+}
+
+.sign-up-form-content span {
+    justify-content: center;
+}
+
+.error {
+    border-color: red !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .login-form {
+        flex: 3;
+    }
+
+    .login-text-content, .sign-up-form-content {
+        width: 90%;
+    }
+
+    .login-text-content h2 {
+        font-size: 1.6rem;
+    }
+
+
+
+}
