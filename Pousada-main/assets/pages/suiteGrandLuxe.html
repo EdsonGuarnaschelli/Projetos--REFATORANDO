@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pousada Encanto da Serra</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter&family=Montserrat&family=Roboto+Mono&family=Roboto&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+  <!-- Ícones FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Seus estilos -->
+  <link rel="stylesheet" href="/styles/stylesReserva/main.css" />
+  <link rel="stylesheet" href="/styles/global.css" />
+  <link rel="stylesheet" href="/styles/stylesReserva/avalicao.css">
+  <link rel="stylesheet" href="/styles/stylesReserva/footer.css">
+</head>
+
+<body>
+  <header class="HeaderReserva">
+    <nav>
+      <ul class="nav-links">
+        <li><img src="/assets/logo/logoPousada.png" alt="Logo da Pousada Canto da Serra" class="logo" /></li>
+        <li><a href="./suiteEssencial.html">Suíte Essencial</a></li>
+        <li><a href="./suitePremium.html">Suíte Premiun</a></li>
+        <li><a href="./suiteGrandLuxe.html">Suíte grand Luxe</a></li>
+        <li><a href="#contatos">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="ContainerReserva animate-on-scroll" data-animation="animate__fadeInDown">
+      <div>
+        <h1>Suíte  Grand Luxe</h1>
+        <hr />
+      </div>
+      <div class="star">
+        <img src="/assets/imagesreserva/Star 1.png" alt="Star" />
+        <img src="/assets/imagesreserva/Star 1.png" alt="Star" />
+        <img src="/assets/imagesreserva/Star 1.png" alt="Star" />
+        <img src="/assets/imagesreserva/Star 1.png" alt="Star" />
+      </div>
+    </section>
+
+    <section class="ContainerReserva animate-on-scroll" data-animation="animate__zoomIn">
+      <div class="container">
+        <img src="/assets/suites/suite_grand_luxe.jpg"  alt="Quarto Villa Kumara" class="imgreserva" />
+        <div class="Quadro">
+          <div>
+            <img src="/assets/SuitesRecomendadas/skylite_2_0_living_room.webp" alt="Vista Villa Kumara" class="wImage wImage2" />
+            <img class="imageRodiziosuite" src="/assets/SuitesRecomendadas/elite-vinho-jantar-romantico-vinho-branco.jpg"  alt="Cozinha Villa Kumara" />
+          </div>
+          <div>
+            <img src="/assets/imagesreserva/100+ Traumhafte Outdoor Küchen – Gestaltungsideen und praktische Tipps 1.png" class="wImage" alt="Vista Villa Kumara" />
+            <img src="/assets/imagesreserva/Café da Manhã em uma Suíte nas montanhas 1.png" alt="Cozinha Villa Kumara" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ContainerReserva animate-on-scroll" data-animation="animate__fadeInUp">
+      <div class="Container">
+        <p>
+          Descubra o máximo em conforto, elegância e exclusividade na nossa Suíte Gran Luxe. Ampla e sofisticada, esta suíte foi projetada para 
+          proporcionar uma experiência única, combinando design refinado, decoração de alto padrão e comodidades de luxo.
+          Com uma área generosa, a Suíte Gran Luxe conta com cama king-size com enxoval premium, sala de estar integrada com móveis de
+          design, varanda privativa com vista panorâmica, banheira de hidromassagem, ducha dupla, amenities especiais, além de serviço de quarto 24h.
+          Perfeita para casais, executivos ou quem deseja viver momentos inesquecíveis com todo o requinte que merece.
+        </p>
+        <h1>Comodidades nos quartos</h1>
+        <div class="ComodidadesContainer">
+          <ul>
+            <li><i class="fa-solid fa-house"></i> Cortinas</li>
+            <li><i class="fa-solid fa-fan"></i> Ar condicionado</li>
+            <li><i class="fa-solid fa-broom"></i> Serviço de limpeza</li>
+            <li><i class="fa-solid fa-check"></i> TV a cabo/por satélite</li>
+          </ul>
+          <ul>
+            <li><i class="fa-solid fa-shirt"></i> Roupões</li>
+            <li><i class="fa-solid fa-chair-office"></i> Escrivaninha</li>
+            <li><i class="fa-solid fa-mug-saucer"></i> Cafeteira/chaleira</li>
+            <li><i class="fa-solid fa-bath"></i> Banheira/chuveiro</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="Forms animate-on-scroll" data-animation="animate__fadeInRight">
+        <form id="reservaForm">
+          <h1>Verifique a disponibilidade:</h1>
+          <div class="form-group">
+            <label for="entrada">Entrada</label>
+            <input type="date" id="entrada" name="entrada" required />
+          </div>
+          <div class="form-group">
+            <label for="saida">Saída</label>
+            <input type="date" id="saida" name="saida" required />
+          </div>
+          <div class="form-group">
+            <label for="hospedes">Quantidade de Hóspedes</label>
+            <input type="number" id="hospedes" name="hospedes" value="0" min="0" />
+            <p id="erroHospedes" style="color: red; display: none;">Selecione pelo menos 1 hóspede.</p>
+          </div>
+          <button type="submit" class="btn-reservar">RESERVAR</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="ContainerCarrossel">
+      <h1>Suítes Recomendadas:</h1>
+      <hr>
+      <div class="owl-carousel suites-carousel">
+        <div><img src="/assets/SuitesRecomendadas/suite1.jpg" alt="Suíte 1" /></div>
+        <div><img src="/assets/SuitesRecomendadas/suite2.jpg" alt="Suíte 2" /></div>
+        <div><img src="/assets/SuitesRecomendadas/suite3.webp" alt="Suíte 3" /></div>
+        <div><img src="/assets/SuitesRecomendadas/suite4.jpg" alt="Suíte 4" /></div>
+        <div><img src="/assets/SuitesRecomendadas/suite5.webp" alt="Suíte 5" /></div>
+        <div><img src="/assets/SuitesRecomendadas/suite6.jpg" alt="Suíte 6" /></div>
+        <div><img src="/assets/SuitesRecomendadas/suite7.jpg" alt="Suíte 7" /></div>
+        <div><img src="/assets/SuitesRecomendadas/suite8.jpg" alt="Suíte 8" /></div>
+      </div>
+    </section>
+
+    <section class="avaliacoes">
+      <h1>Avaliação dos clientes</h1>
+      <hr>
+      <div class="cards">
+        <div class="card">
+          <img src="/assets/perfil/Tiro médio da mulher do smiley que levanta _ Foto Grátis.png" alt="Foto de cliente">
+          <p>"Uma experiência incrível! O lugar é super aconchegante, perfeito para relaxar e curtir a natureza. O café da manhã caseiro é um espetáculo à parte! Com certeza voltarei."</p>
+          <strong>Mariana R.</strong>
+        </div>
+        <div class="card">
+          <img src="/assets/perfil/Group 1.png" alt="Foto de cliente">
+          <p>"A pousada é um verdadeiro refúgio! Quartos confortáveis, atendimento impecável e uma vista maravilhosa. Passamos dias inesquecíveis aqui!"</p>
+          <strong>Lucas M.</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="animate__animated animate__fadeInUp">
+    <hr>
+    <div id="contatos">
+      <ul>
+        <h4>Endereço</h4>
+        <li>Rua Vila Bela, nº 134, 37139-200, Serra da Mantiqueira, MG</li>
+      </ul>
+      <ul>
+        <h4>Contatos</h4>
+        <li>Telefone: (00) 9000-0000</li>
+        <li>WhatsApp: (00) 9000-0000</li>
+        <li>E-mail: encantodaSerra@gmail.com</li>
+      </ul>
+      <ul class="midiaLinks">
+        <h4>Redes sociais</h4>
+        <div>
+          <img class="imgLink" src="/assets/socialMidia/instagram-1-svgrepo-com 1.png" alt="Instagram" />
+          <img class="imgLink" src="/assets/socialMidia/twitter-svgrepo-com 1.png" alt="Twitter" />
+          <img class="imgLinkFacebbok" src="/assets/socialMidia/facebook-color-svgrepo-com .png" alt="Facebook" />
+        </div>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/script/reserva.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    // Carrossel
+    $(document).ready(function () {
+      $(".suites-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 4 }
+        }
+      });
+    });
+
+    // Animações ao rolar
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const animation = el.dataset.animation;
+          el.classList.add('animate__animated', animation);
+          observer.unobserve(el);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+
+</html>

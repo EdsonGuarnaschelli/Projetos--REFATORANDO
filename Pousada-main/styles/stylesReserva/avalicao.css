@@ -1,0 +1,59 @@
+.avaliacoes {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.avaliacoes h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.avaliacoes hr {
+    background-color: #FF6600;
+    height: 5px;
+    background-image: linear-gradient(to right, #FF6600, #FFCC00);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 91px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.card {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 550px;
+    flex: 1 1 300px;
+    position: relative;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    border: 2px solid #fff;
+}
+
+.card p {
+    margin-left: 80px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.card strong {
+    display: block;
+    margin-left: 80px;
+}

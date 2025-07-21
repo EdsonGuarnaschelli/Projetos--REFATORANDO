@@ -1,0 +1,354 @@
+@import url("/styles/global.css");
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+
+}
+
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .depoimentos {
+        flex-direction: column;
+    }
+
+    .quadro {
+        flex-direction: column;
+    }
+
+
+    form {
+        flex-direction: column;
+    }
+
+    .Local {
+        width: 70%;
+
+    }
+
+
+
+}
+
+.container div {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.quadro {
+    display: flex;
+    margin-bottom: 60px;
+    height: auto 0;
+    gap: 40px;
+}
+
+hr {
+    background-color: #FF6600;
+    height: 5px;
+    background-image: linear-gradient(to right, #FF6600, #FFCC00);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 91px;
+}
+
+.texto h1 {
+    text-align: left;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    color: var(--CorPrincipal);
+
+}
+
+.texto p {
+    font-weight: 400;
+    font-size: 24px;
+    color: #3E3E3E;
+
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.sectionDepoiments {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+    max-width: 1200px;
+    margin: auto 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.depoimentos {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.depoimento {
+    background-color: var(--laranja);
+    color: var(--CorBranca);
+    padding: 20px 30px;
+    border-radius: 8px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+
+}
+
+.avatar img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+
+.Perfiltexto p {
+    font-size: 20px;
+    width: auto;
+    font-weight: 100;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+}
+
+.autor {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Seção de Reserva */
+
+.sectionReserv {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.sectionReserv p {
+    color: #3E3E3E;
+    font-size: 27px;
+    font-weight: 300;
+    width: 400px;
+    text-align: center;
+    height: 66px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.formulario {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 2px solid var(--laranja);
+    border-radius: 20px;
+    background-color: var(--backgroundForms);
+
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: space-around;
+    border-radius: 20px;
+    height: auto 0;
+    width: 100%;
+}
+
+.formTable {
+    width: 400px;
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.campo label {
+    display: flex;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.campo input,
+.campo select {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+    padding: 8px;
+}
+
+.campo :placeholder {
+    color: #A4A4A4;
+}
+
+.campo input[type="date"] {
+    width: auto 0;
+}
+
+.campo select {
+    width: auto 0;
+}
+
+.campoButon button {
+    background-color: var(--laranja);
+    color: var(--CorBranca);
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 245px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font: 20px;
+
+}
+
+.campoButon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campo button:hover {
+    background-color: #f57c00;
+}
+
+/*Seção localizaçao */
+
+.Local {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.inframe iframe {
+    width: 1200px;
+    height: 429px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 425px) {
+
+    form {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        justify-content: space-around;
+        border-radius: 20px;
+        height: auto 0;
+        width: 100%;
+        margin-top: 0;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .container div{
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .quadro .imagem,
+    .quadro .texto {
+        flex: 1;
+    }
+
+    .quadro img {
+        max-width: 100%;
+        height: 100%;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .quadro {
+        display:block;
+        width: 100%;
+    }
+
+    .quadro .imagem,
+    .quadro .texto {
+        width: 100%;
+    }
+
+    .quadro .texto h1 {
+        font-size: 1.5rem;
+        text-align:left;
+        text-align: center;
+    }
+
+    .quadro .texto p {
+        font-size: 22px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .quadro img {
+        border-radius: 8px;
+        width: 100%;
+    }
+    .quadro {
+        display: block;
+    }
+    
+    .container div {
+        width: 100%;
+        display: block;
+    }
+    
+    .ImgDestaque {
+        width: 400px;
+    }
+    
+    .formTable {
+        margin-top: 20px;
+    }
+    
+    .campo {
+        margin-bottom: 0;
+    }
+    
+    .texto h1 {
+        text-align: center;
+    }
+
+    .Local {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+
+
+
+
+

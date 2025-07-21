@@ -1,0 +1,130 @@
+@import url("/styles/global.css");
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+@media(max-width: 1024px) {
+    .cardFlex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+.cardFlex {
+    width: 100%;
+    gap: 20px;
+
+
+}
+
+.Card {
+    width: 384px;
+    height: 500px;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: border 0.3s ease-in-out;
+}
+
+.Card:hover {
+    border: 2px solid #ff6600;
+}
+
+
+.Card:nth-child(2) {
+    border: 2px solid orangered !important;
+}
+
+.link-reserva {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+h3 {
+    position: relative;
+    display: inline-block;
+}
+
+h3::after {
+    content: "Clique para mais informações";
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+h3:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.link-reserva:hover {
+    color: #430000;
+}
+
+
+h3:hover {
+    transition: border-bottom 0.3s ease-in-out;
+
+}
+
+
+
+.Card img {
+    width: 100%;
+    border-radius: 20px;
+    height: 320px;
+    filter: brightness(0.5);
+
+
+}
+
+h1 {
+
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--CorPrincipal);
+}
+
+
+.Card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Card h3 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.Card p {
+    width: 333px;
+    height: 165px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1f1204;
+    text-align: left;
+    padding-bottom: 20px;
+}

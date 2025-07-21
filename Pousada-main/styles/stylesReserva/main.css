@@ -1,0 +1,461 @@
+@import url("/styles/global.css");
+
+
+
+.HeaderReserva {
+    width: 100%;
+    background: var(--laranja);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.ContainerReserva {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+/* Header links */
+nav {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+
+.ContainerReserva hr {
+    background-color: #FF6600;
+    height: 5px;
+    background-image: linear-gradient(to right, #FF6600, #FFCC00);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 91px;
+}
+
+.ContainerReserva h1 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    color: #002800;
+}
+
+.star {
+    display: flex;
+    align-self: center;
+    padding-left: 10px;
+}
+
+.star img {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    gap: 28px;
+    margin: 0;
+}
+
+.Quadro {
+    margin-top: 10px;
+}
+
+
+.imgreserva {
+    width: 50%;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.wImage {
+    width: 349px;
+    height: 231px;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Container p {
+    width: 650px;
+    height: 255px;
+    font-size: 18px;
+    color: #3E3E3E;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+.Forms {
+    width: 467px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+.Forms h1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #002800;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-reservar {
+    background-color: var(--laranja);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-reservar:hover {
+    background-color: #f57c00;
+}
+
+/* Comodidades nos quartos */
+
+.ComodidadesContainer {
+    display: flex;
+}
+
+.ComodidadesContainer ul li {
+    color: #0c0101;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    text-transform: capitalize;
+}
+
+.ComodidadesContainer ul li i {
+    margin-right: 10px;
+}
+
+/* Seção suítes Recomendadas */
+
+.ContainerCarrossel {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.ContainerCarrossel h1 {
+    color: #000000;
+    font-size: 25px;
+    height: 54px;
+    font-weight: 700;
+    width: 400px;
+}
+
+.ContainerCarrossel hr {
+    background-color: #FF6600;
+    height: 5px;
+    background-image: linear-gradient(to right, #FF6600, #FFCC00);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 91px;
+    margin-bottom: 30px;
+}
+
+.suites-carousel img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.owl-carousel .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.owl-carousel .owl-nav button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+/* Responsividade para telas até 768px */
+@media (max-width: 768px) {
+    main {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .HeaderReserva {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ContainerReserva {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .Quadro {
+        flex-direction: column;
+    }
+
+    .Quadro div {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .avaliacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card img {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+    .ContainerReserva h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .star {
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .wImage {
+        width: 100%;
+        height: auto;
+    }
+    .imgreserva{
+        width: 100%;
+    }
+
+    
+
+    .qtfotos div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .qtfotos div img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imageRodiziosuite {
+        width: 600px;
+        height: 400px;
+    }
+
+    .Container p {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .ComodidadesContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ComodidadesContainer ul {
+        padding: 0;
+    }
+
+    .Forms {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .Forms h1 {
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    input[type="date"],
+    input[type="number"] {
+        width: 100%;
+    }
+
+    .btn-reservar {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .ContainerCarrossel h1 {
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ContainerCarrossel hr {
+        margin: 0 auto 20px auto;
+    }
+
+    .owl-carousel .owl-nav {
+        top: 30%;
+    }
+
+    footer hr {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+        border: none;
+        border-top: 1px solid #ccc;
+        /* Estilo da linha */
+        margin-top: 50px;
+    }
+
+
+    footer div {
+        flex-direction: column;
+    }
+
+    .imgLink {
+        width: 30px;
+    }
+
+    .imgLinkFacebbok {
+        width: 30px;
+    }
+
+    footer div ul {
+        margin: 0 auto;
+        text-align: left;
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .wImage2 {
+        width: 400px;
+    }
+
+    /* Html suite essencial */
+
+}
+
+
+@media (max-width: 425px) {
+    .Quadro div {
+        display: block;
+    }
+
+    .Quadro div img {
+        width: 100%;
+    }
+}
+
+.imageRodiziosuite {
+    width: 210px;
+    height: 230px;
+}
